@@ -1,25 +1,23 @@
 import time
 
 """this program shows the mechanism behind the multiplication of a two by two matrix"""
+def get_int(prompt):
+  while True:
+    try:
+      return int(input(prompt))
+    except ValueError:
+      print("Invalid Input, try again")
 
 print("======FIRST MATRIX======")
-while True:
-  try:
-    place_a = int(input("first place:: "))
-    place_b = int(input("second place:: "))
-    place_c = int(input("third place:: "))
-    place_d = int(input("forth place:: "))
-    break
-  except ValueError:
-    print("Invalid input")
-    continue
-
+place_a = get_int(("first place:: "))
+place_b = get_int(("second place:: "))
+place_c = get_int(("third place:: "))
+place_d = get_int(("forth place:: "))
 print("======SECOND MATRIX======")
-place_1 = int(input("first place:: "))
-place_2 = int(input("second place:: "))
-place_3 = int(input("third place:: "))
-place_4 = int(input("forth place:: "))
-
+place_1 = get_int(("first place:: "))
+place_2 = get_int(("second place:: "))
+place_3 = get_int(("third place:: "))
+place_4 = get_int(("forth place:: "))
 
 matrix_1 = [
     [place_a, place_b],
@@ -33,61 +31,27 @@ matrix_2 = [
 
 first_num = matrix_1[0][0]
 second_num = matrix_1[0][1]
-
-
 third_num = matrix_1[1][0]
 forth_num = matrix_1[1][1]
 
-pos_1 = []
-pos_2 = []
-pos_3 = []
-pos_4 = []
+result1 = first_num * matrix_2[0][0]
+result2 = second_num * matrix_2[1][0]
+sum1 = result1 + result2
 
-first_cord = []
-second_cord = []
+result1 = first_num * matrix_2[0][1]
+result2 = second_num * matrix_2[1][1]
+sum2 = result1 + result2
 
+result1 = third_num * matrix_2[0][0]
+result2 = forth_num * matrix_2[1][0]
+sum3 = result1 + result2
 
-for i in matrix_2:
-    multiplier = i[0]
-    result = multiplier * first_num
-    pos_1.append(result)
-    first_num = second_num
+result1 = third_num * matrix_2[0][1]
+result2 = forth_num * matrix_2[1][1]
+sum4 = result1 + result2
 
-first_num = matrix_1[0][0]
-second_num = matrix_1[0][1]
+pos_1 = [sum1, sum2]
+pos_2 = [sum3, sum4]
 
-for x in matrix_2:
-    multiplier = x[1]
-    result = multiplier * first_num
-    pos_2.append(result)
-    first_num = second_num
-
-sum_pos_1 = sum(pos_1)
-sum_pos_2 = sum(pos_2)
-
-first_cord.append(sum_pos_1)
-second_cord.append(sum_pos_2)
-
-for numbers in matrix_2:
-    multiplier = numbers[0]
-    result = multiplier * third_num
-    pos_3.append(result)
-    third_num = forth_num
-
-third_num = matrix_1[1][0]
-forth_num = matrix_1[1][1]
-
-for numbers in matrix_2:
-    multiplier = numbers[1]
-    result = multiplier * third_num
-    pos_4.append(result)
-    third_num = forth_num
-    
-sum_pos_3 = sum(pos_3)
-sum_pos_4 = sum(pos_4)
-
-result_matrix_1 = [sum_pos_1, sum_pos_2]
-result_matrix_2 = [sum_pos_3, sum_pos_4]
-
-print(result_matrix_1)
-print(result_matrix_2)
+print(pos_1)
+print(pos_2)
