@@ -36,6 +36,7 @@ while True:
 number_of_times = []
 number_of_times.append(number)
 
+# The if statement ensure typing 0 does not crash the program
 if number == 0:
   number_of_times.append(0)
 
@@ -49,7 +50,7 @@ while True:
     number = divide
     
   elif number % 2 != 0:
-    divide = (number // 2) 
+    divide = number // 2
     number_of_times.append(divide)
     number = divide
 
