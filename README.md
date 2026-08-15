@@ -7,6 +7,7 @@ A collection of beginner-friendly Python logic scripts and mini-projects.
 ## 📦 Projects Included
 
 * **Decimal to Binary Converter** (`decimal_binary_converter.py`): A script that converts base-10 integers into binary representations.
+* * **A 2x2 Matrix Multiplier**
 
 ## 🚀 How to Run
 
@@ -14,5 +15,5 @@ A collection of beginner-friendly Python logic scripts and mini-projects.
 2. Run any script in your terminal:
 
 \`\`\`bash
-python decimal_binary_converter.py
+python3 <filename.py>
 \`\`\`
