@@ -9,8 +9,10 @@ while True:
     place_b = int(input("second place:: "))
     place_c = int(input("third place:: "))
     place_d = int(input("forth place:: "))
+    break
   except ValueError:
-    ...
+    print("Invalid input")
+    continue
 
 print("======SECOND MATRIX======")
 place_1 = int(input("first place:: "))
