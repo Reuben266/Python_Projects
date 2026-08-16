@@ -1,0 +1,184 @@
+[2026-08-16 10:00:01] [INFO] Server engine started successfully on port 8080.
+[2026-08-16 10:00:02] [DEBUG] Initializing core modules and loading configuration files...
+[2026-08-16 10:00:03] [DEBUG] Connecting to primary database at 192.168.1.105:5432...
+[2026-08-16 10:00:05] [INFO] Database connected successfully. Active pool size: 10 connections.
+[2026-08-16 10:00:07] [INFO] User admin initiated login sequence from IP 10.0.0.12.
+[2026-08-16 10:00:08] [ERROR] Password authentication failed for user admin.
+[2026-08-16 10:00:09] [WARNING] Password authentication failed for user admin from IP 10.0.0.12.
+[2026-08-16 10:00:11] [INFO] User admin logged in using bearer token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:00:15] [DEBUG] Session initialized for user admin. Session Token: secret_token_998877.
+[2026-08-16 10:00:18] [INFO] GET /api/v1/users requested by IP 172.16.0.44.
+[2026-08-16 10:00:20] [INFO] Request processed cleanly in 14ms. Status 200 OK.
+[2026-08-16 10:00:22] [DEBUG] Background task scheduled: Sync user metrics.
+[2026-08-16 10:00:25] [INFO] User reuben logged in from IP 10.0.0.42.
+[2026-08-16 10:00:27] [INFO] User reuben updated profile picture successfully.
+[2026-08-16 10:00:30] [ERROR] Database query failed! Syntax error near 'SELECT * FROM'.
+[2026-08-16 10:00:32] [DEBUG] Retrying database query with fallback connection...
+[2026-08-16 10:00:35] [INFO] Database query executed successfully.
+[2026-08-16 10:00:40] [WARNING] High memory usage detected: 84% allocated.
+[2026-08-16 10:00:42] [DEBUG] Garbage collection routine started.
+[2026-08-16 10:00:45] [INFO] Garbage collection completed. Memory usage reduced to 52%.
+[2026-08-16 10:00:50] [INFO] User bright attempted login from IP 192.168.1.200.
+[2026-08-16 10:00:52] [ERROR] Password authentication failed for user bright.
+[2026-08-16 10:00:55] [ERROR] Failed to fetch profile picture for user bright.
+[2026-08-16 10:01:00] [INFO] User bright generated fresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6I.
+[2026-08-16 10:01:05] [DEBUG] Connection pool recycled cleanly.
+[2026-08-16 10:01:10] [INFO] GET /api/v1/settings requested by IP 10.0.0.42.
+[2026-08-16 10:01:12] [INFO] User reuben logged in using bearer token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:01:15] [WARNING] Access denied for user guest from IP 172.16.0.99.
+[2026-08-16 10:01:18] [ERROR] Authentication token expired for user guest.
+[2026-08-16 10:01:20] [INFO] Refreshing auth token for user guest.
+[2026-08-16 10:01:25] [DEBUG] DB connection timeout reset to 3000ms.
+[2026-08-16 10:01:30] [INFO] POST /api/v1/auth/login from IP 192.168.1.105.
+[2026-08-16 10:01:32] [ERROR] Login failed for user unknown_user.
+[2026-08-16 10:01:35] [WARNING] Password verification failed three consecutive times.
+[2026-08-16 10:01:40] [INFO] IP address 192.168.1.105 placed on temporary rate limit lock.
+[2026-08-16 10:01:45] [INFO] Backup service triggered by scheduler.
+[2026-08-16 10:01:50] [DEBUG] Compressing database snapshot...
+[2026-08-16 10:01:55] [ERROR] Backup process failed! Connection timed out.
+[2026-08-16 10:02:00] [DEBUG] Session token active: secret_token_998877.
+[2026-08-16 10:02:05] [INFO] User admin requested system status report.
+[2026-08-16 10:02:10] [INFO] Status report generated cleanly in 8ms.
+[2026-08-16 10:02:15] [INFO] Request processed in 12ms.
+[2026-08-16 10:02:20] [DEBUG] Incoming WebSocket handshake from IP 10.0.0.55.
+[2026-08-16 10:02:22] [INFO] WebSocket connection established cleanly.
+[2026-08-16 10:02:25] [WARNING] Message delivery failed on socket channel #4.
+[2026-08-16 10:02:30] [INFO] Socket channel #4 reconnected.
+[2026-08-16 10:02:35] [INFO] User sara logged in from IP 172.16.0.12.
+[2026-08-16 10:02:38] [DEBUG] Active auth token registered for user sara: token_abc_123_xyz.
+[2026-08-16 10:02:40] [INFO] POST /api/v1/payments processed successfully.
+[2026-08-16 10:02:45] [ERROR] Payment gateway webhook failed to respond.
+[2026-08-16 10:02:50] [WARNING] Retrying webhook delivery (attempt 1/3)...
+[2026-08-16 10:02:55] [INFO] Webhook delivery acknowledged.
+[2026-08-16 10:03:01] [WARNING] Multiple failed login attempts detected on port 8080.
+[2026-08-16 10:03:05] [INFO] Security scan executed on range 10.0.0.0/24.
+[2026-08-16 10:03:10] [DEBUG] No vulnerabilities detected during scan.
+[2026-08-16 10:03:15] [INFO] User alex requested password reset from IP 192.168.1.88.
+[2026-08-16 10:03:18] [INFO] Password reset email dispatched successfully.
+[2026-08-16 10:03:22] [ERROR] Token verification failed for reset link token_invalid_99.
+[2026-08-16 10:03:25] [INFO] User alex requested new password reset link.
+[2026-08-16 10:03:30] [ERROR] Backup process failed! Connection timed out.
+[2026-08-16 10:03:35] [INFO] User alex verified email token successfully.
+[2026-08-16 10:03:40] [INFO] User alex changed password cleanly.
+[2026-08-16 10:03:45] [DEBUG] Flushing cache keys for user alex...
+[2026-08-16 10:03:50] [INFO] Cache flush complete.
+[2026-08-16 10:03:55] [INFO] System health check: ALL_SYSTEMS_OPTIMAL.
+[2026-08-16 10:04:00] [INFO] System shutdown requested cleanly.
+[2026-08-16 10:04:02] [INFO] Server engine started successfully on port 8080.
+[2026-08-16 10:04:03] [DEBUG] Initializing core modules and loading configuration files...
+[2026-08-16 10:04:05] [DEBUG] Connecting to primary database at 192.168.1.105:5432...
+[2026-08-16 10:04:07] [INFO] Database connected successfully. Active pool size: 10 connections.
+[2026-08-16 10:04:08] [ERROR] Password authentication failed for user admin.
+[2026-08-16 10:04:09] [WARNING] Password authentication failed for user admin from IP 10.0.0.12.
+[2026-08-16 10:04:11] [INFO] User admin logged in using bearer token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:04:15] [DEBUG] Session initialized for user admin. Session Token: secret_token_998877.
+[2026-08-16 10:04:18] [INFO] GET /api/v1/users requested by IP 172.16.0.44.
+[2026-08-16 10:04:20] [INFO] Request processed cleanly in 14ms. Status 200 OK.
+[2026-08-16 10:04:25] [INFO] User reuben logged in from IP 10.0.0.42.
+[2026-08-16 10:04:27] [INFO] User reuben updated profile picture successfully.
+[2026-08-16 10:04:30] [ERROR] Database query failed! Syntax error near 'SELECT * FROM'.
+[2026-08-16 10:04:35] [INFO] Database query executed successfully.
+[2026-08-16 10:04:40] [WARNING] High memory usage detected: 84% allocated.
+[2026-08-16 10:04:45] [INFO] Garbage collection completed. Memory usage reduced to 52%.
+[2026-08-16 10:04:50] [INFO] User bright attempted login from IP 192.168.1.200.
+[2026-08-16 10:04:52] [ERROR] Password authentication failed for user bright.
+[2026-08-16 10:04:55] [ERROR] Failed to fetch profile picture for user bright.
+[2026-08-16 10:05:00] [INFO] User bright generated fresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6I.
+[2026-08-16 10:05:05] [DEBUG] Connection pool recycled cleanly.
+[2026-08-16 10:05:10] [INFO] GET /api/v1/settings requested by IP 10.0.0.42.
+[2026-08-16 10:05:12] [INFO] User reuben logged in using bearer token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:05:15] [WARNING] Access denied for user guest from IP 172.16.0.99.
+[2026-08-16 10:05:18] [ERROR] Authentication token expired for user guest.
+[2026-08-16 10:05:20] [INFO] Refreshing auth token for user guest.
+[2026-08-16 10:05:25] [DEBUG] DB connection timeout reset to 3000ms.
+[2026-08-16 10:05:30] [INFO] POST /api/v1/auth/login from IP 192.168.1.105.
+[2026-08-16 10:05:32] [ERROR] Login failed for user unknown_user.
+[2026-08-16 10:05:35] [WARNING] Password verification failed three consecutive times.
+[2026-08-16 10:05:40] [INFO] IP address 192.168.1.105 placed on temporary rate limit lock.
+[2026-08-16 10:05:45] [INFO] Backup service triggered by scheduler.
+[2026-08-16 10:05:55] [ERROR] Backup process failed! Connection timed out.
+[2026-08-16 10:06:00] [DEBUG] Session token active: secret_token_998877.
+[2026-08-16 10:06:05] [INFO] User admin requested system status report.
+[2026-08-16 10:06:15] [INFO] Request processed in 12ms.
+[2026-08-16 10:06:20] [DEBUG] Incoming WebSocket handshake from IP 10.0.0.55.
+[2026-08-16 10:06:22] [INFO] WebSocket connection established cleanly.
+[2026-08-16 10:06:25] [WARNING] Message delivery failed on socket channel #4.
+[2026-08-16 10:06:30] [INFO] Socket channel #4 reconnected.
+[2026-08-16 10:06:35] [INFO] User sara logged in from IP 172.16.0.12.
+[2026-08-16 10:06:38] [DEBUG] Active auth token registered for user sara: token_abc_123_xyz.
+[2026-08-16 10:06:40] [INFO] POST /api/v1/payments processed successfully.
+[2026-08-16 10:06:45] [ERROR] Payment gateway webhook failed to respond.
+[2026-08-16 10:06:50] [WARNING] Retrying webhook delivery (attempt 1/3)...
+[2026-08-16 10:06:55] [INFO] Webhook delivery acknowledged.
+[2026-08-16 10:07:01] [WARNING] Multiple failed login attempts detected on port 8080.
+[2026-08-16 10:07:05] [INFO] Security scan executed on range 10.0.0.0/24.
+[2026-08-16 10:07:15] [INFO] User alex requested password reset from IP 192.168.1.88.
+[2026-08-16 10:07:18] [INFO] Password reset email dispatched successfully.
+[2026-08-16 10:07:22] [ERROR] Token verification failed for reset link token_invalid_99.
+[2026-08-16 10:07:25] [INFO] User alex requested new password reset link.
+[2026-08-16 10:07:30] [ERROR] Backup process failed! Connection timed out.
+[2026-08-16 10:07:35] [INFO] User alex verified email token successfully.
+[2026-08-16 10:07:40] [INFO] User alex changed password cleanly.
+[2026-08-16 10:07:45] [DEBUG] Flushing cache keys for user alex...
+[2026-08-16 10:07:50] [INFO] Cache flush complete.
+[2026-08-16 10:07:55] [INFO] System health check: ALL_SYSTEMS_OPTIMAL.
+[2026-08-16 10:08:00] [INFO] System shutdown requested cleanly.
+[2026-08-16 10:08:02] [INFO] Server engine started successfully on port 8080.
+[2026-08-16 10:08:03] [DEBUG] Initializing core modules and loading configuration files...
+[2026-08-16 10:08:05] [DEBUG] Connecting to primary database at 192.168.1.105:5432...
+[2026-08-16 10:08:07] [INFO] Database connected successfully. Active pool size: 10 connections.
+[2026-08-16 10:08:08] [ERROR] Password authentication failed for user admin.
+[2026-08-16 10:08:09] [WARNING] Password authentication failed for user admin from IP 10.0.0.12.
+[2026-08-16 10:08:11] [INFO] User admin logged in using bearer token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:08:15] [DEBUG] Session initialized for user admin. Session Token: secret_token_998877.
+[2026-08-16 10:08:18] [INFO] GET /api/v1/users requested by IP 172.16.0.44.
+[2026-08-16 10:08:20] [INFO] Request processed cleanly in 14ms. Status 200 OK.
+[2026-08-16 10:08:25] [INFO] User reuben logged in from IP 10.0.0.42.
+[2026-08-16 10:08:27] [INFO] User reuben updated profile picture successfully.
+[2026-08-16 10:08:30] [ERROR] Database query failed! Syntax error near 'SELECT * FROM'.
+[2026-08-16 10:08:35] [INFO] Database query executed successfully.
+[2026-08-16 10:08:40] [WARNING] High memory usage detected: 84% allocated.
+[2026-08-16 10:08:45] [INFO] Garbage collection completed. Memory usage reduced to 52%.
+[2026-08-16 10:08:50] [INFO] User bright attempted login from IP 192.168.1.200.
+[2026-08-16 10:08:52] [ERROR] Password authentication failed for user bright.
+[2026-08-16 10:08:55] [ERROR] Failed to fetch profile picture for user bright.
+[2026-08-16 10:09:00] [INFO] User bright generated fresh token: eyJhbGciOiJIUzI1NiIsInR5cCI6I.
+[2026-08-16 10:09:05] [DEBUG] Connection pool recycled cleanly.
+[2026-08-16 10:09:10] [INFO] GET /api/v1/settings requested by IP 10.0.0.42.
+[2026-08-16 10:09:12] [INFO] User reuben logged in using bearer token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:09:15] [WARNING] Access denied for user guest from IP 172.16.0.99.
+[2026-08-16 10:09:18] [ERROR] Authentication token expired for user guest.
+[2026-08-16 10:09:20] [INFO] Refreshing auth token for user guest.
+[2026-08-16 10:09:25] [DEBUG] DB connection timeout reset to 3000ms.
+[2026-08-16 10:09:30] [INFO] POST /api/v1/auth/login from IP 192.168.1.105.
+[2026-08-16 10:09:32] [ERROR] Login failed for user unknown_user.
+[2026-08-16 10:09:35] [WARNING] Password verification failed three consecutive times.
+[2026-08-16 10:09:40] [INFO] IP address 192.168.1.105 placed on temporary rate limit lock.
+[2026-08-16 10:09:45] [INFO] Backup service triggered by scheduler.
+[2026-08-16 10:09:55] [ERROR] Backup process failed! Connection timed out.
+[2026-08-16 10:10:00] [DEBUG] Session token active: secret_token_998877.
+[2026-08-16 10:10:05] [INFO] User admin requested system status report.
+[2026-08-16 10:10:15] [INFO] Request processed in 12ms.
+[2026-08-16 10:10:20] [DEBUG] Incoming WebSocket handshake from IP 10.0.0.55.
+[2026-08-16 10:10:22] [INFO] WebSocket connection established cleanly.
+[2026-08-16 10:10:25] [WARNING] Message delivery failed on socket channel #4.
+[2026-08-16 10:10:30] [INFO] Socket channel #4 reconnected.
+[2026-08-16 10:10:35] [INFO] User sara logged in from IP 172.16.0.12.
+[2026-08-16 10:10:38] [DEBUG] Active auth token registered for user sara: token_abc_123_xyz.
+[2026-08-16 10:10:40] [INFO] POST /api/v1/payments processed successfully.
+[2026-08-16 10:10:45] [ERROR] Payment gateway webhook failed to respond.
+[2026-08-16 10:10:50] [WARNING] Retrying webhook delivery (attempt 1/3)...
+[2026-08-16 10:10:55] [INFO] Webhook delivery acknowledged.
+[2026-08-16 10:11:01] [WARNING] Multiple failed login attempts detected on port 8080.
+[2026-08-16 10:11:05] [INFO] Security scan executed on range 10.0.0.0/24.
+[2026-08-16 10:11:15] [INFO] User alex requested password reset from IP 192.168.1.88.
+[2026-08-16 10:11:18] [INFO] Password reset email dispatched successfully.
+[2026-08-16 10:11:22] [ERROR] Token verification failed for reset link token_invalid_99.
+[2026-08-16 10:11:25] [INFO] User alex requested new password reset link.
+[2026-08-16 10:11:30] [ERROR] Backup process failed! Connection timed out.
+[2026-08-16 10:11:35] [INFO] User alex verified email token successfully.
+[2026-08-16 10:11:40] [INFO] User alex changed password cleanly.
+[2026-08-16 10:11:45] [DEBUG] Flushing cache keys for user alex...
+[2026-08-16 10:11:50] [INFO] Cache flush complete.
+[2026-08-16 10:11:55] [INFO] System health check: ALL_SYSTEMS_OPTIMAL.
+[2026-08-16 10:12:00] [INFO] System shutdown requested cleanly.
