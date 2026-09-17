@@ -7,6 +7,7 @@ class BankAccount:
     self._amount_owed = 0
     self.transaction = []
     
+    
 
   def deposit(self, amount):
     if amount < 0:
@@ -32,6 +33,10 @@ class BankAccount:
   def loan(self, amount, time):
     if self._balance == 0:
       return "you Cannot aquire a loan if your account balance is $0.00"
+      
+    elif time <= 0:
+      return "Invalid input, negative time"
+    
     else:
       SI = (amount * 25 * time)/100
       self._amount_owed = amount + SI
@@ -80,7 +85,12 @@ class BankAccount:
           target_account.deposit(amount)
           return f"Sent ${amount:.2f} to {target_account.name}"
       
-  
+  def convert_to_class_instance_to_dic(self):
+    ...
+
+  def convert_to_class_instance(self):
+    ...
+    
   def __str__(self):
     return f"Acount name: {self.name} | Acount balance: ${self._balance:.2f}"
 
@@ -104,7 +114,5 @@ class SavingsAcount(BankAccount):
       
 
 ac1 = BankAccount("Reuben", "08888", "reu@ben.com", 1000)
-ac2 = BankAccount("Bright", "066666", "bri@gmail.com", "200")
-print(ac1.transfer(ac2, 200))
-print(ac1)
-print(ac2)
+ac2 = SavingsAcount("Bright", "066666", "bri@gmail.com", "20", 200)
+print(ac1.loan(200,-6))
