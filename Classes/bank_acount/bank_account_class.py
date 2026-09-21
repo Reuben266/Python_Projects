@@ -22,7 +22,7 @@ class BankAccount:
   
   def withdraw(self, amount):
     if amount > self._balance:
-      return f"Cannot withdraw an amount greater than your balance. Current balance: ${self._balance:.2f}"
+      print(f"Cannot withdraw an amount greater than your balance. Current balance: ${self._balance:.2f}")
     
     elif amount < 0 or amount == 0:
       result = "Cannot withdraw an amount less than or equal to $0.00"
@@ -151,7 +151,3 @@ class SavingsAccount(BankAccount):
   
   def __str__(self):
     return f"Account name: {self.name} | Age: {self.age} | Balance: ${self._balance:.2f}"
-
-ac1 = BankAccount("Reuben", "00777", "ben.com", 1000)
-print(ac1.loan(200, 2))
-print(ac1._amount_owed)
