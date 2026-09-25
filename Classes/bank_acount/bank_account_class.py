@@ -11,59 +11,54 @@ class BankAccount:
 
   def deposit(self, amount):
     if amount < 0 or amount == 0:
-      result = "Invalid input, the amount must be greater than 0.00"
-      print(result)
+      return "Invalid input, the amount must be greater than 0.00"
+      
     else:
       self._balance += amount
       self.transaction.append(f"Deposited: ${amount:.2f}")
-      result = f"Deposited: ${amount:.2f}, current balance: ${self._balance:.2f}"
-      print(result)
+      return f"Deposited: ${amount:.2f}, current balance: ${self._balance:.2f}"
+    
       
   
   def withdraw(self, amount):
     if amount > self._balance:
-      print(f"Cannot withdraw an amount greater than your balance. Current balance: ${self._balance:.2f}")
+      return f"Cannot withdraw an amount greater than your balance. Current balance: ${self._balance:.2f}"
     
     elif amount < 0 or amount == 0:
-      result = "Cannot withdraw an amount less than or equal to $0.00"
-      print(result)
-      return result
+      return "Cannot withdraw an amount less than or equal to $0.00"
     
     else:
       self._balance -= amount
       self.transaction.append(f"Withdrew ${amount:.2f}")
-      result = f"Withdrew ${amount:.2f}, current balance ${self._balance:.2f}"
-      print(result)
-      return result
+      return f"Withdrew ${amount:.2f}, current balance ${self._balance:.2f}"
   
   def loan(self, amount, time):
     if self._balance == 0:
-      result = "you Cannot acquire a loan if your account balance is $0.00"
-      print(result)
+      return "you Cannot acquire a loan if your account balance is $0.00"
+      
       
     elif time <= 0:
-      result = "Invalid input, negative time"
-      print(result)
+      return "Invalid input, negative time"
+    
   
     elif amount < 0 or amount == 0:
-      result = "Invalid input, cannot take a loan less than or equal to $0.00"
-      print(result)
+      return "Invalid input, cannot take a loan less than or equal to $0.00"
+      
       
     else:
       SI = (amount * 25 * time)/100
       self._amount_owed += (amount + SI)
       self._balance += amount
       self.transaction.append(f"Took a loan of ${amount:.2f} for a time of {time} year(s)")
-      result = f"Took a loan of ${amount:.2f}, interest on ${amount:.2f} is ${SI:.2f}, total _amount_owed: ${self._amount_owed:.2f}, current balance: ${self._balance:.2f}"
-      print(result)
+      return f"Took a loan of ${amount:.2f}, interest on ${amount:.2f} is ${SI:.2f}, total _amount_owed: ${self._amount_owed:.2f}, current balance: ${self._balance:.2f}"
+      
   
   def pay_loan(self, amount):
     if self._amount_owed == 0:
-      result = f"Loan already paid, current balance: ${self._balance:.2f}"
-      print(result)
+      return f"Loan already paid, current balance: ${self._balance:.2f}"
     elif amount > self._balance:
-      result = "Insufficient balance"
-      print(result)
+      return "Insufficient balance"
+    
       
     elif amount > self._amount_owed:
       self.transaction.append(f"Paid ${self._amount_owed:.2f}")
@@ -71,19 +66,18 @@ class BankAccount:
       self._balance -= self._amount_owed
       change = amount
       self._amount_owed = 0
-      result = f"Amount left: ${self._amount_owed:.2f}. Change of ${change:.2f} was returned. Current account balance: ${self._balance:.2f}"
-      print(result)
+      return f"Amount left: ${self._amount_owed:.2f}. Change of ${change:.2f} was returned. Current account balance: ${self._balance:.2f}"
+      
       
     elif amount <= 0:
-      result="Amount must be greater than $0.00"
-      print(result)
+      return "Amount must be greater than $0.00"
       
     else:
       self._amount_owed -= amount
       self._balance -= amount
       self.transaction.append(f"Paid ${amount:.2f}")
-      result=f"paid an amount of: ${amount:.2f}. total amount left: ${self._amount_owed:.2f}. Current account balance: ${self._balance:.2f}"
-      print(result)
+      return f"paid an amount of: ${amount:.2f}. total amount left: ${self._amount_owed:.2f}. Current account balance: ${self._balance:.2f}"
+      
 
   
   def transfer(self, target_account, amount):

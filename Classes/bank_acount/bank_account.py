@@ -28,9 +28,51 @@ def value(prompt):
      return float(input(prompt))
     except ValueError:
       print("Invalid Input")
-      
 
-user_options = ["[1] Add Bank Account 🏛️➕", "[2] Add Savings Account 🐷➕", "[3] Deposit 💵📥", "[4] Withdraw 💵📤", "[5] Take loan 🤝💵", "[6] Pay loan 💳✅", "[7] Save and Exit 💾🚪"]
+def transfer(main_account):
+  target_account = input("Enter reciever's phone number::  ")
+  
+  found = False
+  for account in account_list:
+    if account.phone_number == target_account:
+      found = True
+      account_name = account.name
+      target = account
+      break
+  if found:
+    print("\n")
+    print("=" * 20, "ACCOUNT NAME", "=" * 20)
+    print(account_name)
+    print("=" * 54)
+    print("\n")
+  
+    verification = input("Verify the name of the account (yes/no):  ").lower().strip()
+    print("\n")
+        
+    if verification == "no":
+      print("=" * 54)
+      return "Account not found"
+      print("=" * 54)
+      print("\n")
+    elif verification == "yes":
+      amount = value(("Enter amount to be transfered::  "))
+      print("\n")
+      print("=" * 54)
+      return main_account.transfer(target, amount)
+      print("=" * 54)
+      print("\n")
+    else:
+      print("=" * 54)
+      return "Invalid Input"
+      print("=" * 54)
+      print("\n")
+  else:
+    print("=" * 54)
+    return "Account not found"
+    print("=" * 54)
+    print("\n")
+
+user_options = ["[1] Add Bank Account 🏛️➕", "[2] Add Savings Account 🐷➕", "[3] Deposit 💵📥", "[4] Withdraw 💵📤", "[5] Take loan 🤝💵", "[6] Pay loan 💳✅", "[7] Transfer money", "[8] Save and Exit 💾🚪"]
 
 while True:
   print("=" * 20, "USER OPTIONS", "=" * 20)
@@ -67,6 +109,7 @@ while True:
 
   elif choice == 3:
     phone = input("Enter your phone number::  ")
+    print("\n")
     
     found = False
     for account in account_list:
@@ -93,7 +136,7 @@ while True:
         amount = value(("How much do you want to deposit::  "))
         print("\n")
         print("=" * 54)
-        account.deposit(amount)
+        print(account.deposit(amount))
         print("=" * 54)
         print("\n")
       else:
@@ -109,6 +152,7 @@ while True:
 
   elif choice == 4:
     phone = input("Enter your phone number::  ")
+    print("\n")
     
     found = False
     for account in account_list:
@@ -135,7 +179,7 @@ while True:
         amount = value(("How much do you want to Withdraw::  "))
         print("\n")
         print("=" * 54)
-        account.withdraw(amount)
+        print(account.withdraw(amount))
         print("=" * 54)
         print("\n")
       else:
@@ -152,6 +196,7 @@ while True:
 
   elif choice == 5:
     phone = input("Enter your phone number::  ")
+    print("\n")
     
     found = False
     for account in account_list:
@@ -179,7 +224,7 @@ while True:
         duration = value(("Enter the duration of the loan::  "))
         print("\n")
         print("=" * 54)
-        account.loan(amount, duration)
+        print(account.loan(amount, duration))
         print("=" * 54)
         print("\n")
       else:
@@ -196,16 +241,17 @@ while True:
 
   elif choice == 6:
     phone = input("Enter your phone number::  ")
+    print("\n")
     
     found = False
     for account in account_list:
       if account.phone_number == phone:
         found = True
+        account_name = account.name
         break
           
     if found:
       print("=" * 20, "ACCOUNT NAME", "=" * 20)
-      account_name = account.name
       print(account_name)
       print("=" * 54)
       print("\n")
@@ -219,9 +265,10 @@ while True:
         print("=" * 54)
         print("\n")
       elif verification == "yes":
+        print("\n")
         amount = value("Enter amount::  ")
         print("=" * 54)
-        account.pay_loan(amount)
+        print(account.pay_loan(amount))
         print("=" * 54)
         print("\n")
       else:
@@ -236,6 +283,47 @@ while True:
       print("\n")
 
   elif choice == 7:
+    phone = input("Enter your phone number::  ")
+    print("\n")
+    
+    found = False
+    for account in account_list:
+      if account.phone_number == phone:
+        found = True
+        account_name = account.name
+        user = account
+        break
+          
+    if found:
+      print("=" * 20, "ACCOUNT NAME", "=" * 20)
+      print(account_name)
+      print("=" * 54)
+      print("\n")
+    
+      verification = input("Verify the name of the account (yes/no):  ").lower().strip()
+      print("\n")
+
+      if verification == "no":
+        print("=" * 54)
+        print("Account not found")
+        print("=" * 54)
+        print("\n")
+      elif verification == "yes":
+        print(transfer(user))
+        print("=" * 54)
+        print("\n")
+      else:
+        print("=" * 54)
+        print("Invalid Input")
+        print("=" * 54)
+        print("\n")
+    else:
+      print("=" * 54)
+      print("Account not found")
+      print("=" * 54)
+      print("\n")
+
+  elif choice == 8:
     saved_account = []
     for account in account_list:
       finished = account.convert_to_class_instance_to_dic()
