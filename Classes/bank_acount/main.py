@@ -1,6 +1,7 @@
 import bank_account_class as ba
 import json
 
+print(type(ba))
 account_list = []
 def convert_to_class_instance():
     try:
