@@ -72,7 +72,7 @@ def transfer(main_account):
     print("=" * 54)
     print("\n")
 
-user_options = ["[1] Add Bank Account 🏛️➕", "[2] Add Savings Account 🐷➕", "[3] Deposit 💵📥", "[4] Withdraw 💵📤", "[5] Take loan 🤝💵", "[6] Pay loan 💳✅", "[7] Transfer money", "[8] Save and Exit 💾🚪"]
+user_options = ["[1] 🏛️➕ Add Bank Account", "[2] 🐷➕ Add Savings Account", "[3] 💵📥 Deposit", "[4] 💵📤 Withdraw", "[5] 🤝💵 Take loan", "[6] 💳✅ Pay loan", "[7] 📤💸 Transfer money", "[8] 💾🚪 Save and Exit"]
 
 while True:
   print("=" * 20, "USER OPTIONS", "=" * 20)
@@ -265,9 +265,9 @@ while True:
         print("=" * 54)
         print("\n")
       elif verification == "yes":
-        print("\n")
         amount = value("Enter amount::  ")
         print("=" * 54)
+        print("\n")
         print(account.pay_loan(amount))
         print("=" * 54)
         print("\n")
@@ -335,7 +335,6 @@ while True:
     break
  
   else:
-    print("\n")
     print("=" * 54)
     print("Invalid Input!, Try again")
     print("=" * 54)

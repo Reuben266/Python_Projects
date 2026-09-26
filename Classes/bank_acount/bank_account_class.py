@@ -1,5 +1,3 @@
-import json
-
 class BankAccount:
   def __init__(self, name, phone_number, email, balance=0):
     self.name = str(name)
