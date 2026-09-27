@@ -1,27 +1,8 @@
 import bank_account_class as ba
-import json
+import file_persistence as fp
 
-print(type(ba))
-account_list = []
-def convert_to_class_instance():
-    try:
-      with open('account.json', 'r') as file:
-        accounts = json.load(file)
-        for account in accounts:
-          if account['account_type'] == "BankAccount":
-            banking = ba.BankAccount(account['name'], account['phone_number'], account['email'], account['balance'])
-            banking._amount_owed = account['amount_owed']
-            banking.transaction = account['transaction history']
-            account_list.append(banking)
-          if account['account_type'] == "SavingsAccount":
-            saving = ba.SavingsAccount(account['name'], account['phone_number'], account['email'], account['age'], account['balance'])
-            saving._amount_owed = account['amount_owed']
-            saving.transaction = account['transaction history']
-            account_list.append(saving)
-        return account_list
-    except FileNotFoundError:
-      print("File Not Found")
-convert_to_class_instance()
+
+account_list = fp.convert_to_class_instance("account.json")
 
 def value(prompt):
   while True:
@@ -325,14 +306,7 @@ while True:
       print("\n")
 
   elif choice == 8:
-    saved_account = []
-    for account in account_list:
-      finished = account.convert_to_class_instance_to_dic()
-      saved_account.append(finished)
-
-    with open('account.json', 'w') as file:
-      json.dump(saved_account, file, indent = 5)
-
+    fp.save_to_json('account.json', account_list)
     break
  
   else:
