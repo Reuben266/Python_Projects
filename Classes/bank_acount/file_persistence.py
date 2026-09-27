@@ -18,7 +18,7 @@ def convert_to_class_instance(file_name):
             saving._amount_owed = account['amount_owed']
             saving.transaction = account['transaction history']
             account_list.append(saving)
-    except FileNotFoundError:
+    except (FileNotFoundError, json.decoder.JSONDecodeError):
       account_list = []
       
     return account_list
