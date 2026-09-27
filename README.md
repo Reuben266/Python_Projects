@@ -36,19 +36,13 @@ Welcome to the **Python Projects Portfolio** repository! 🚀 This repository co
   * Persistent reading and writing to JSON files.
   * Interactive CLI menu interface.
 
-### 5. 🔒 Password Strength Evaluator
-* **Description:** A security assessment tool that evaluates the strength of user-supplied passwords.
-* **Key Features:**
-  * Checks character variety, length, and special symbol density.
-  * Provides actionable feedback to improve password security.
-
-### 6. 🧮 Matrix Multiplication Utility
+### 5. 🧮 Matrix Multiplication Utility
 * **Description:** A mathematical utility executing 2x2 matrix multiplication algorithms.
 * **Key Features:**
   * Iterative calculations using optimized loop structures.
   * Clean numerical processing logic.
 
-### 7. 🔢 Binary & Decimal Converter
+### 6. 🔢 Binary & Decimal Converter
 * **Description:** A conversion tool for transforming positive integers into binary representations.
 * **Key Features:**
   * Binary digit string validation.
