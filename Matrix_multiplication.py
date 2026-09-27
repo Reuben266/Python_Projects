@@ -53,5 +53,7 @@ sum4 = result1 + result2
 pos_1 = [sum1, sum2]
 pos_2 = [sum3, sum4]
 
+print("="*48)
 print(pos_1)
 print(pos_2)
+print("="*48)

@@ -10,8 +10,8 @@
 [2026-08-16 10:00:18] [INFO] GET /api/v1/users requested by IP [REDACTED_IP].
 [2026-08-16 10:00:20] [INFO] Request processed cleanly in 14ms. Status 200 OK.
 [2026-08-16 10:00:22] [DEBUG] Background task scheduled: Sync user metrics.
-[2026-08-16 10:00:25] [INFO] User reuben logged in from IP [REDACTED_IP].
-[2026-08-16 10:00:27] [INFO] User reuben updated profile picture successfully.
+[2026-08-16 10:00:25] [INFO] User [REDACTED] logged in from IP [REDACTED_IP].
+[2026-08-16 10:00:27] [INFO] User [REDACTED] updated profile picture successfully.
 [2026-08-16 10:00:30] [ERROR] Database query [REDACTED]! Syntax error near 'SELECT * FROM'.
 [2026-08-16 10:00:32] [DEBUG] Retrying database query with fallback connection...
 [2026-08-16 10:00:35] [INFO] Database query executed successfully.
@@ -24,7 +24,7 @@
 [2026-08-16 10:01:00] [INFO] User bright generated fresh [REDACTED]: eyJhbGciOiJIUzI1NiIsInR5cCI6I.
 [2026-08-16 10:01:05] [DEBUG] Connection pool recycled cleanly.
 [2026-08-16 10:01:10] [INFO] GET /api/v1/settings requested by IP [REDACTED_IP].
-[2026-08-16 10:01:12] [INFO] User reuben logged in using bearer [REDACTED] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:01:12] [INFO] User [REDACTED] logged in using bearer [REDACTED] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
 [2026-08-16 10:01:15] [WARNING] Access denied for user guest from IP [REDACTED_IP].
 [2026-08-16 10:01:18] [ERROR] Authentication [REDACTED] expired for user guest.
 [2026-08-16 10:01:20] [INFO] Refreshing auth [REDACTED] for user guest.
@@ -74,8 +74,8 @@
 [2026-08-16 10:04:15] [DEBUG] Session initialized for user admin. Session [REDACTED]: secret_[REDACTED]_998877.
 [2026-08-16 10:04:18] [INFO] GET /api/v1/users requested by IP [REDACTED_IP].
 [2026-08-16 10:04:20] [INFO] Request processed cleanly in 14ms. Status 200 OK.
-[2026-08-16 10:04:25] [INFO] User reuben logged in from IP [REDACTED_IP].
-[2026-08-16 10:04:27] [INFO] User reuben updated profile picture successfully.
+[2026-08-16 10:04:25] [INFO] User [REDACTED] logged in from IP [REDACTED_IP].
+[2026-08-16 10:04:27] [INFO] User [REDACTED] updated profile picture successfully.
 [2026-08-16 10:04:30] [ERROR] Database query [REDACTED]! Syntax error near 'SELECT * FROM'.
 [2026-08-16 10:04:35] [INFO] Database query executed successfully.
 [2026-08-16 10:04:40] [WARNING] High memory usage detected: 84% allocated.
@@ -86,7 +86,7 @@
 [2026-08-16 10:05:00] [INFO] User bright generated fresh [REDACTED]: eyJhbGciOiJIUzI1NiIsInR5cCI6I.
 [2026-08-16 10:05:05] [DEBUG] Connection pool recycled cleanly.
 [2026-08-16 10:05:10] [INFO] GET /api/v1/settings requested by IP [REDACTED_IP].
-[2026-08-16 10:05:12] [INFO] User reuben logged in using bearer [REDACTED] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:05:12] [INFO] User [REDACTED] logged in using bearer [REDACTED] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
 [2026-08-16 10:05:15] [WARNING] Access denied for user guest from IP [REDACTED_IP].
 [2026-08-16 10:05:18] [ERROR] Authentication [REDACTED] expired for user guest.
 [2026-08-16 10:05:20] [INFO] Refreshing auth [REDACTED] for user guest.
@@ -133,8 +133,8 @@
 [2026-08-16 10:08:15] [DEBUG] Session initialized for user admin. Session [REDACTED]: secret_[REDACTED]_998877.
 [2026-08-16 10:08:18] [INFO] GET /api/v1/users requested by IP [REDACTED_IP].
 [2026-08-16 10:08:20] [INFO] Request processed cleanly in 14ms. Status 200 OK.
-[2026-08-16 10:08:25] [INFO] User reuben logged in from IP [REDACTED_IP].
-[2026-08-16 10:08:27] [INFO] User reuben updated profile picture successfully.
+[2026-08-16 10:08:25] [INFO] User [REDACTED] logged in from IP [REDACTED_IP].
+[2026-08-16 10:08:27] [INFO] User [REDACTED] updated profile picture successfully.
 [2026-08-16 10:08:30] [ERROR] Database query [REDACTED]! Syntax error near 'SELECT * FROM'.
 [2026-08-16 10:08:35] [INFO] Database query executed successfully.
 [2026-08-16 10:08:40] [WARNING] High memory usage detected: 84% allocated.
@@ -145,7 +145,7 @@
 [2026-08-16 10:09:00] [INFO] User bright generated fresh [REDACTED]: eyJhbGciOiJIUzI1NiIsInR5cCI6I.
 [2026-08-16 10:09:05] [DEBUG] Connection pool recycled cleanly.
 [2026-08-16 10:09:10] [INFO] GET /api/v1/settings requested by IP [REDACTED_IP].
-[2026-08-16 10:09:12] [INFO] User reuben logged in using bearer [REDACTED] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+[2026-08-16 10:09:12] [INFO] User [REDACTED] logged in using bearer [REDACTED] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
 [2026-08-16 10:09:15] [WARNING] Access denied for user guest from IP [REDACTED_IP].
 [2026-08-16 10:09:18] [ERROR] Authentication [REDACTED] expired for user guest.
 [2026-08-16 10:09:20] [INFO] Refreshing auth [REDACTED] for user guest.

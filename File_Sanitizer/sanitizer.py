@@ -1,7 +1,7 @@
 import re
 
 find_ip = r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
-words_to_redact = ["failed", "Failed", "token", "Token"]
+words_to_redact = ["failed", "Failed", "token", "Token", "reuben"]
 
 try:
   with open("sample_log.txt", "r") as file, open("cleaned_log.txt", "w") as output:
@@ -16,3 +16,4 @@ try:
   print(f"{count} REDACTED words")
 except FileNotFoundError:
   print("File was not created")
+  

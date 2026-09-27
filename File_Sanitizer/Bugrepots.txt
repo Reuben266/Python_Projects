@@ -1,0 +1,216 @@
+Module metadata package name: com.google.android.modulemetadata
+Launching async 'SERIALIZE PERFETTO TRACE'Duration of 'DUMPSYS CRITICAL': 2.02s
+Duration of 'EVENT LOG': 0.05s
+Duration of 'STATS LOG': 0.01s
+Duration of 'RADIO LOG': 0.05s
+Start thread pool:1
+Adding dir /cache/recovery (recursive: 1)
+Adding dir /data/misc/recovery (recursive: 1)
+Adding dir /data/misc/update_engine_log (recursive: 1)
+Adding dir /data/misc/update_engine/prefs (recursive: 1)
+Adding dir /data/misc/logd (recursive: 0)
+/data/misc/logd: No such file or directory
+Adding dir /data/misc/prereboot (recursive: 0)
+Unable to read link for /proc/4617/ns/mnt: No such file or directory
+Unable to read link for /proc/4620/ns/mnt: No such file or directory
+MOUNT INFO: 91 entries added to zip file
+Duration of 'LPDUMP': 1.05s
+Adding dir /metadata/ota (recursive: 1)
+execvp on command 'iotop -n 1 -m 100' failed (error: No such file or directory)
+*** command 'iotop -n 1 -m 100' failed: exit code 1
+Duration of 'Dmabuf dump': 1.64s
+Adding dir /data/misc/apexdata/com.android.uwb/log (recursive: 1)
+/data/misc/apexdata/com.android.uwb/log: No such file or directory
+Duration of 'DUMP TRACES': 41.17s
+Duration of 'Wait for ': 37.60s
+shutdown thread pool
+Start thread pool:3
+Warning: Skipping "android.frameworks.cameraservice.service@2.0::ICameraService/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.frameworks.cameraservice.service@2.1::ICameraService/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.frameworks.cameraservice.service@2.2::ICameraService/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.frameworks.displayservice@1.0::IDisplayService/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.frameworks.sensorservice@1.0::ISensorManager/default": cannot be fetched from service manager (null)
+section 1000 status 1
+Warning: Skipping "android.hardware.boot@1.0::IBootControl/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.boot@1.1::IBootControl/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.boot@1.2::IBootControl/default": cannot be fetched from service manager (null)
+section 1000 status 2
+section 1002 status 1
+section 1002 status 2
+section 1109 status 1
+section 1109 status 2
+section 1110 status 1
+section 1110 status 2
+section 1111 status 1
+section 1111 status 2
+section 1112 status 1
+section 1112 status 2
+section 1113 status 1
+section 1113 status 2
+section 1114 status 1
+Duration of 'DUMP NETSTATS PROTO': 0.56s
+No IDumpstateDevice AIDL implementation
+No IDumpstateDevice HIDL implementation
+Could not find IDumpstateDevice implementation
+Failed to unlink file (/data/user_de/0/com.android.shell/files/bugreports/dumpstate_board.bin): No such file or directory
+Failed to unlink file (/data/user_de/0/com.android.shell/files/bugreports/dumpstate_board.txt): No such file or directory
+section 1114 status 2
+section 1115 status 1
+section 1115 status 2
+section 1116 status 1
+Warning: Skipping "android.hardware.gatekeeper@1.0::IGatekeeper/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.ir@1.0::IConsumerIr/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.media.omx@1.0::IOmx/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.media.omx@1.0::IOmxStore/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio.config@1.0::IRadioConfig/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio.config@1.1::IRadioConfig/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio.config@1.3::IRadioConfig/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/em1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/em2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/em3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/imsAospSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/imsAospSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/imsAospSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/se1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/se2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/se3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::ISap/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::ISap/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.0::ISap/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/em1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/em2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/em3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/imsAospSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/imsAospSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/imsAospSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/se1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/se2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/se3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::ISap/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::ISap/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.1::ISap/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/em1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/em2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/em3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/imsAospSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/imsAospSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/imsAospSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/se1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/se2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/se3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::ISap/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::ISap/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.2::ISap/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/em1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/em2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/em3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/imsAospSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/imsAospSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/imsAospSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/se1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/se2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/se3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.3::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/em1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/em2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/em3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/imsAospSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/imsAospSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/imsAospSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/se1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/se2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/se3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.4::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/em1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/em2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/em3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/imsAospSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/imsAospSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/imsAospSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/se1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/se2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/se3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.5::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/em1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/em2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/em3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/imsAospSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/imsAospSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/imsAospSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/se1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/se2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/se3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/slot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/slot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.radio@1.6::IRadio/slot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.secure_element@1.0::ISecureElement/SIM1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.secure_element@1.0::ISecureElement/SIM2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.secure_element@1.1::ISecureElement/SIM1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.secure_element@1.1::ISecureElement/SIM2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.secure_element@1.2::ISecureElement/SIM1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.secure_element@1.2::ISecureElement/SIM2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.usb.gadget@1.0::IUsbGadget/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.usb.gadget@1.1::IUsbGadget/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.usb@1.0::IUsb/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.usb@1.1::IUsb/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.usb@1.2::IUsb/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hardware.usb@1.3::IUsb/default": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.allocator@1.0::IAllocator/ashmem": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/AgpsDebugInterface": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/AgpsInterface": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/SIM1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/SIM2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/ashmem": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/clearkey": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/em1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/em2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/em3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/imsAospSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/imsAospSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/imsAospSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/imsSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/imsSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/imsSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/internal/0": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkAssist1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkAssist2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkAssist3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkCap1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkCap2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkCap3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkEm1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkEm2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkEm3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkRcs1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkRcs2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkRcs3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkRsu1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkRsu2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkRsu3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSe1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSe2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSe3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSlot1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSlot2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSlot3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSmartRatSwitch1": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSmartRatSwitch2": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtkSmartRatSwitch3": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtk_agps2framework": cannot be fetched from service manager (null)
+Warning: Skipping "android.hidl.base@1.0::IBase/mtk_agpsd2debugService": cannot be fetched from service manager (null)
+Warning: Skipping "android.
