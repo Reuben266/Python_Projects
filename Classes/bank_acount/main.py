@@ -1,7 +1,6 @@
 import bank_account_class as ba
 import file_persistence as fp
 
-
 account_list = fp.convert_to_class_instance("account.json")
 
 def value(prompt):
