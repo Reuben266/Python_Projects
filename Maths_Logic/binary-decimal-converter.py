@@ -34,4 +34,5 @@ for bit in bin_list:
 
 result = sum(result_list)
 
+
 print(f"The decimal value of {binary_str} is:: {result}")
