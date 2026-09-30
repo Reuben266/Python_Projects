@@ -23,3 +23,15 @@ while True:
     print("Invalid Input")
     bin_list.clear()
     continue
+
+max_pow = (len(bin_list) - 1)
+result_list = []
+
+for bit in bin_list:
+  result = bit * (2**max_pow)
+  result_list.append(result)
+  max_pow -= 1
+
+result = sum(result_list)
+
+print(f"The decimal value of {binary_str} is:: {result}")
