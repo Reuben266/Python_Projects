@@ -26,23 +26,38 @@ def insert_to_database(x, y, z, w):
                 )
   conn.commit()
 
+
+def restock(item_name, quantity):
+  cursor.execute("""UPDATE inventory
+                    SET quantity = quantity + (?)
+                    WHERE name = (?)""",(quantity, item_name))
+  conn.commit()
+
+def sell(item_name, quantity):
+  cursor.execute("""UPDATE inventory
+                    SET quantity_sold = quantity_sold + (?) 
+                    WHERE name = (?)""", (quantity, item_name))
+  
+  cursor.execute("""UPDATE inventory
+                    SET quantity = quantity - (?)
+                    WHERE name = (?)""", (quantity, item_name))
+  conn.commit()
+
+def most_sold():
+  cursor.execute("""
+                  SELECT name, MAX(quantity_sold)
+                  FROM inventory
+  """)
+  return cursor.fetchone()
+
+def least_sold():
+  cursor.execute("""
+                  SELECT name, MIN(quantity_sold)
+                  FROM inventory
+  """)
+  return cursor.fetchone()
+  
 def check_duplicate(item_name):
   duplicate = cursor.execute("""SELECT name FROM inventory 
                        WHERE name = (?)""",(item_name,))
   retrieve_duplicate = cursor.fetchone()
-  try:
-    if item_name in retrieve_duplicate:
-      duplicate_found = True
-  except TypeError:
-    duplicate_found = False
-      
-  if duplicate_found:
-    item_price = cursor.execute("""SELECT quantity FROM inventory
-                      WHERE name = (?)""",(item_name,))
-    
-    return duplicate_found, item_price
-
-def restock(item_name, quantity):
-  cursor.execute("""UPDATE inventory
-                    SET quantity = quantity + 10
-                    WHERE name = (?)""",(item_name,))

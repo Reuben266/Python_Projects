@@ -27,22 +27,30 @@ while True:
 
   if choice == 1:
     name = input("What is the name of thr item::  ")
-    found = db.check_duplicate(name)
+    price = is_valid("What is the price of the item::  ")
+    stock = is_valid("What is the quantity of the item::  ")
+    item = ic.Inventory(name, price, stock)
+    db.insert_to_database(item.name, item.stock, item.price, item.quantity_sold)
     
-    if found[0]:
-      stock = is_valid("What is the quantity of the item::  ")
-      price = found[1]
-      db.restock(name, stock)
-    else:
-      price = is_valid("What is the price of the item::  ")
-      stock = is_valid("What is the quantity of the item::  ")
-      item = ic.Inventory(name, price, stock)
-      db.insert_to_database(item.name, item.stock, item.price, item.quantity_sold)
-
-    
-    print("\n=============================")
+    print("\n=======================================")
     print(f"{name} was added to stock successfully")
-    print("=============================\n")
+    print("=========================================\n")
 
-  if choice == 6:
+  elif choice == 2:
+    name = input("What is the name of the item you want to stock::  ")
+    quantity = is_valid("Enter stock quantity:: ")
+    db.restock(name, quantity)
+
+  elif choice == 3:
+    name = input("What is the name of the item you want to sell:: ")
+    quantity_sold = input("How many items:: ")
+    db.sell(name, quantity_sold)
+
+  elif choice == 4:
+    print(db.most_sold())
+
+  elif choice == 5:
+    print(db.least_sold())
+
+  elif choice == 6:
     break
