@@ -1,5 +1,6 @@
 import sqlite3
 import inventory_class as ic
+import os
 
 
 conn = sqlite3.connect("inventory.db")
@@ -58,6 +59,16 @@ def least_sold():
   return cursor.fetchone()
   
 def check_duplicate(item_name):
+  item_found = False
   duplicate = cursor.execute("""SELECT name FROM inventory 
                        WHERE name = (?)""",(item_name,))
   retrieve_duplicate = cursor.fetchone()
+  
+  if retrieve_duplicate == None:
+    item_found = False
+  else:
+    if item_name in retrieve_duplicate:
+      item_found = True
+      
+
+  return item_found

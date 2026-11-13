@@ -27,10 +27,15 @@ while True:
 
   if choice == 1:
     name = input("What is the name of thr item::  ")
-    price = is_valid("What is the price of the item::  ")
-    stock = is_valid("What is the quantity of the item::  ")
-    item = ic.Inventory(name, price, stock)
-    db.insert_to_database(item.name, item.stock, item.price, item.quantity_sold)
+    item_found = db.check_duplicate(name)
+    if item_found:
+      stock = is_valid("What is the quantity of the item::  ")
+      db.restock(name, stock)
+    else:
+      price = is_valid("What is the price of the item::  ")
+      stock = is_valid("What is the quantity of the item::  ")
+      item = ic.Inventory(name, price, stock)
+      db.insert_to_database(item.name, item.stock, item.price, item.quantity_sold)
     
     print("\n=======================================")
     print(f"{name} was added to stock successfully")
