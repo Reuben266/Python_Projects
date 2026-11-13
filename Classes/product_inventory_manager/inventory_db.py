@@ -34,6 +34,7 @@ def restock(item_name, quantity):
                     WHERE name = (?)""",(quantity, item_name))
   conn.commit()
 
+
 def sell(item_name, quantity):
   cursor.execute("""UPDATE inventory
                     SET quantity_sold = quantity_sold + (?) 

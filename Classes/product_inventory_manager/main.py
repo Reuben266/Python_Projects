@@ -24,9 +24,10 @@ while True:
     choice = int(input("What action do you want to perform(1-6)::  "))
   except ValueError:
     print("Invalid input, try again")
+    continue
 
   if choice == 1:
-    name = input("What is the name of thr item::  ")
+    name = input("What is the name of thr item::  ").lower().strip()
     item_found = db.check_duplicate(name)
     if item_found:
       stock = is_valid("What is the quantity of the item::  ")
@@ -43,8 +44,12 @@ while True:
 
   elif choice == 2:
     name = input("What is the name of the item you want to stock::  ")
-    quantity = is_valid("Enter stock quantity:: ")
-    db.restock(name, quantity)
+    item_found = db.check_duplicate(name)
+    if item_found:
+      quantity = is_valid("Enter stock quantity:: ")
+      db.restock(name, quantity)
+    else:
+      print("Item has not been registed yet")
 
   elif choice == 3:
     name = input("What is the name of the item you want to sell:: ")
