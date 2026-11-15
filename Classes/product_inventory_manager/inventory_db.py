@@ -1,6 +1,5 @@
 import sqlite3
 import inventory_class as ic
-import os
 
 
 conn = sqlite3.connect("inventory.db")

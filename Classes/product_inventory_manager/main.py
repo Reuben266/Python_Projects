@@ -38,9 +38,9 @@ while True:
       item = ic.Inventory(name, price, stock)
       db.insert_to_database(item.name, item.stock, item.price, item.quantity_sold)
     
-    print("\n=======================================")
-    print(f"{name} was added to stock successfully")
-    print("=========================================\n")
+      print("\n=======================================")
+      print(f"{name} was added to stock successfully")
+      print("=========================================\n")
 
   elif choice == 2:
     name = input("What is the name of the item you want to stock::  ")
@@ -53,9 +53,14 @@ while True:
 
   elif choice == 3:
     name = input("What is the name of the item you want to sell:: ")
-    quantity_sold = input("How many items:: ")
-    db.sell(name, quantity_sold)
-
+    item_found = db.check_duplicate(name)
+    
+    if item_found:
+      quantity_sold = input("How many items:: ")
+      db.sell(name, quantity_sold)
+    else:
+      print("Item has not been registed yet")
+      
   elif choice == 4:
     print(db.most_sold())
 
